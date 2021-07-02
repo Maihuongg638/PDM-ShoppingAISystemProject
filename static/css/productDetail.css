@@ -1,0 +1,170 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-between {
+	justify-content: space-between;
+}
+
+.productDetail {
+	margin-top: 50px;
+}
+
+.pro {
+	width: 100%;
+	height: 100%;
+	display: block;
+	/* overflow: hidden; */
+}
+
+.pro img{
+	/* max-width: 100%;
+	max-height: 100%; */
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+	/* display: block; */
+	display: block;
+	transition: all .3s ease;
+} 
+
+.pro img:hover{
+	transform: scale(1.1);
+}
+
+.promore{
+	width: 125px; 
+	height: 125px;
+}
+#moreimg{
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+.productDetail .detail {
+	display: flex;
+}
+
+.productDetail .detail .left-column {
+	/* position: relative; */
+	flex: 1 1 35%;
+}
+
+.productDetail .detail .left-column img {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	height: 100%;
+	/* margin-right: 10px; */
+	/* transition: all .3s ease; */
+}
+
+.productDetail .detail .right-column {
+	position: relative;
+	flex: 1 1 65%;
+}
+
+.productDetail .detail .right-column .product-description {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #e1e8ee;
+}
+
+.productDetail .detail .right-column .product-description span {
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #358ed7;
+}
+
+.productDetail .detail .right-column .product-description span.price {
+	font-size: 26px;
+	font-weight: 300;
+	margin-top: 20px;
+	margin-right: 20px;
+	color: #43474d;
+}
+
+.productDetail .detail .right-column .product-description h1 {
+	font-size: 52px;
+	font-weight: 300;
+	letter-spacing: -2px;
+	color: #43484d;
+}
+
+.productDetail .detail .right-column .product-description p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #86939e;
+}
+
+.productDetail .detail .right-column .product-configuration .cable-config {
+	font-size: 25px;
+	position: relative;
+	display: flex;
+	width: 130px;
+	margin-bottom: 50px;
+	padding: 0 10px;
+	color: #333;
+	border: 1px solid #e1e1e1;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.productDetail .detail .right-column .product-configuration .cable-config .qty-btn {
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+
+.productDetail .detail .right-column .product-configuration .cable-config input[type=number] {
+	font-size: 18px;
+	line-height: 1.2;
+	width: 60px;
+	height: 42px;
+	padding: 0 10px;
+	text-align: center;
+	color: inherit;
+	border: none;
+	background-color: transparent;
+	-moz-appearance: textfield;
+}
+
+.productDetail .detail .right-column .product-price {
+	display: flex;
+	align-items: center;
+}
+
+.productDetail .detail .right-column .product-price span {
+	font-size: 26px;
+	font-weight: 300;
+	margin-right: 20px;
+	color: #43474d;
+}
+
+.productDetail .detail .right-column .product-price .cart-btn {
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px 30px;
+	transition: all .5s;
+	text-decoration: none;
+	color: #333;
+	border: 2px solid #e3e3e3;
+	border-radius: 6px;
+	background-color: #fed700;
+}
+
+.productDetail .detail .right-column .product-price .cart-btn:hover {
+	background: #64af3d;
+}
+

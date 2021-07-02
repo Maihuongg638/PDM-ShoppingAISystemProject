@@ -1,0 +1,196 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-between {
+	justify-content: space-between;
+}
+
+.Register {
+	width: 100%;
+	height: 1100px;
+	margin: auto;
+	margin-top: 40px;
+	background: url(../img/slider_bg_31.png) no-repeat center/cover;
+}
+
+.Register .header-form {
+	font-family: Libre Baskerville;
+	font-size: 1.2em;
+	display: flex;
+	margin: auto;
+	margin-bottom: -80px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #333e48;
+	justify-content: center;
+}
+
+.Register .header-form h1 {
+	margin-top: 50px;
+}
+
+.Register .signin-form .form-register {
+	font-family: 'Open Sans', sans-serif;
+	height: 900px;
+	margin: 50px;
+	margin: 10em auto 12em;
+	padding: 20px 50px;
+	border: 2px solid sandybrown;
+	border-radius: 10px;
+}
+
+.Register .signin-form .form-register .title {
+	font-family: 'Dancing Script';
+	margin-bottom: 20px;
+	padding: 0 120px;
+}
+
+.Register .signin-form .form-register .title h4 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #333e48;
+}
+
+.Register .signin-form .form-register .registration {
+	padding: 0 120px;
+}
+
+.Register .signin-form .form-register .registration p {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.Register .signin-form .form-register .registration .submit {
+	display: flex;
+	margin-top: 2em;
+	justify-content: center;
+	align-items: center;
+}
+
+.Register .signin-form .form-register .registration input[type='email'],
+.Register .signin-form .form-register .registration input[type='password'],
+.Register .signin-form .form-register .registration input[type='tel'],
+.Register .signin-form .form-register .registration input[type='text'] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: .3em;
+	padding: 1em 3em 1em 1em;
+	letter-spacing: 1px;
+	color: #000;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+	background: #e4c7ae !important;
+	justify-content: center;
+}
+
+.Register .signin-form .form-register .registration input[type='email']:hover,
+.Register .signin-form .form-register .registration input[type='password']:hover,
+.Register .signin-form .form-register .registration input[type='tel']:hover,
+.Register .signin-form .form-register .registration input[type='text']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #ececec;
+}
+
+.Register .signin-form .form-register .registration .name {
+	margin-right: 150px;
+}
+
+.Register .signin-form .form-register .registration .name p {
+	margin-bottom: 15px;
+}
+
+.Register .signin-form .form-register .registration .name input[type='text'] {
+	width: 100%;
+}
+
+.Register .signin-form .form-register .registration .reset-password {
+	margin-top: 1em;
+}
+
+.Register .signin-form .form-register .registration .reset-password h6 a {
+	font-size: 15px;
+	display: inherit;
+	letter-spacing: 1px;
+	color: salmon;
+	justify-content: flex-end;
+}
+
+.Register .signin-form .form-register .registration .reset-password h6:hover a {
+	color: #26b5eefa;
+}
+
+.Register .signin-form .form-register .registration .reset-password input[type='submit'] {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	width: 150px;
+	padding: .7em 0;
+	cursor: pointer;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	letter-spacing: 1px;
+	color: black;
+	border: 2px solid sandybrown;
+	border-radius: 30px;
+	outline: none;
+	background: salmon;
+}
+
+.Register .signin-form .form-register .registration .reset-password input[type='submit']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #26b5eefa;
+}
+
+.Register .signin-form .form-register .registration .pom-agile {
+	position: relative;
+	padding: 10px 0;
+}
+
+.Register .signin-form .form-register .registration .pom-agile input.pass {
+	margin-top: .7em;
+}
+
+.Register .signin-form .form-register .registration .pom-agile span {
+	font-size: 1.1em;
+	position: absolute;
+	right: 6%;
+	color: salmon;
+}
+
+.Register .signin-form .form-register .registration .pom-agile span.icon1 {
+	top: 23%;
+}
+
+.Register .signin-form .form-register .registration .pom-agile span.icon2 {
+	top: 34%;
+}
+

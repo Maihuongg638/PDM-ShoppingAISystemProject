@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Final Project</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/Product-Cat.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/reset.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/finalproject.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/all.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/option.css')}}">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <div class="Full-Web"> 
+    <div class="header-banner">
+      <div class=" header-information">
+        <div class="container  flex j-between ">
+          <nav class="navigation flex">
+            <ul class="flex">
+                <li>
+                    <span><i class="fas fa-truck-moving"></i></span>
+                    <span class="name">Free Delivery</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-globe-africa"></i></span>
+                    <span class="name">Returns Policy</span>
+                </li>
+            </ul>
+            <ul class="icons flex  j-between a-center">
+                <li><span>Follow Us</span></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+            </ul>
+        </nav>
+        <a href="/" class="login"><span>Hello, {{UserName}}</span></a>
+        </div>
+    </div>
+  
+    </div>
+    <div class="AddProduct">
+        <section id="sidebar">
+            <div class="sidebar-brand ">
+                <div class="hi flex a-center j-center"> 
+                    <img src="dist/img/logo.PNG"  alt="">
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul>
+                    <li><a href="/adminpage/{{UserName}}"><i class="fa fa-desktop"></i><span>Dashboard</span></a></li>
+                    <li><a href=""><i class="fa fa-users"></i><span>Customers</span></a></li>
+                    <li><a href=""><i class="fa fa-file-pdf-o"></i><span>Orders</span></a></li>
+                    <li><a href=""><i class="fa fa-money"></i><span>Income</span></a></li>
+                    <li><a href=""><i class="fa fa-user"></i><span>Account</span></a></li>
+                    <li><a href=""><i class="fa fa-sign-out"></i><span>Logout</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="main-content">
+            <header>
+                <div class="header-left">
+                    <h2 ><i class="fa fa-bars"></i>M&N Shop</h2>
+                </div>
+                <div class="header-left">
+                  <form action="/adminpage/{{UserName}}/productmanager/search" method="POST">
+                    <input name = "search" class="search-bar" type="text" placeholder="search Hear..">
+                    <button type="submit">
+                      <i class="fa fa-search search"></i>
+                    </button>
+                  </form>
+                </div>
+                <div class="header-left">
+                    <h3>Update Product</h3>
+                    <p>Admin</p>
+                </div>
+            </header>
+            <div class="content-pro-par container">
+                <div class="container pro-table borderfull">
+                  <div class="title flex j-between">
+                    <h1>Products</h1>
+                  </div>
+                  <table id="Product">
+                    <thead>
+                      <tr >
+                        <th class="second">Product Id</th>
+                        <th class="third">Product Name</th>
+                        <th class="fourth">Price</th>
+                        <th class="fifth">Unit sold</th>
+                        <th class="sixth">Quantity</th>
+                        <th class="seventh">Rating</th>
+                        <th class="eighth">&nbsp;</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- shopping cart contents -->
+                      {% for item in listproduct %}
+                        <tr class="Table-product-content">
+                          <td class="second email">{{item[0]}}</td>
+                          <td class="third" style=" max-width: 200px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;text-align: left;">{{item[1]}}</td>
+                          <td class="fourth ">{{item[3]}}</td>
+                          <td class="fifth">550</td>
+                          <td class="sixth">70</td>
+                          <td class="seven">{{item[4]}}</td>
+                          <td class="eight"><a href="/adminpage/{{UserName}}/productmanager/remove/{{item[0]}}"><span class="remove fifth"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></a></td
+                        </tr>
+                      {% endfor %}
+                      <tr class="Add-product">
+                        <td class="add"><button id="adP"><a href="/adminpage/{{UserName}}/newproduct">Add new product</a></button></td>
+                        <td colspan="3"></td>
+                        <td colspan="4" class="update"><button id="adP"><a href="">Update product</a></button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                <div class="cat-table borderfull">
+                  <div class="title flex j-between">
+                    <h1>Categories</h1>
+                </div>
+                <table id="product-Cat">
+                  <thead>
+                    <tr >
+                      <th class="first">Category Id</th>
+                      <th class="second">Category Name</th>
+                      <th class="fourth">&nbsp;</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in listcate %}
+                    <!-- shopping cart contents -->
+                    <tr class="Table-cat-content">
+                      <td class="frist user-name">{{item[0]}}</td>
+                      <td class="second total">{{item[1]}}</td>
+                      <td><span class="remove fifth"><img src="https://i.imgur.com/h1ldGRr.png" alt="X"></span></td>
+                    </tr>
+                    {% endfor %}
+                    <tr class="add-category">
+                      <td colspan="5"><button id="AdCat"><a href="/adminpage/{{UserName}}/newproduct">Add new category</a></button></td>
+                    </tr>
+                  </tbody>
+                </table>             
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sponsors">
+      <div class="container">
+        <div class="sponsors-wrap">
+          <ul class="flex j-between">
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_1.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_2.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_3.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_4.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_5.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section">
+      <div class="btn-backToTop">
+        <div class="totop-content flex">
+          <a href="#">BACK TOP</a>
+          <i class="fas fa-arrow-right" ></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-contain">
+          <div class="row">
+            <ul class="col-sm-4">
+              <div class="element-image">
+                <img src="" alt="">
+              </div>
+              <div class="information">
+                <h2>Got Question? Call us 24/7</h2>
+                <h3>[80] 1017 197</h3> <br>
+                <p>17 Princess Road, London, Greater <br>
+                   London NW1 8JR, UK</p>
+              </div>
+              <div class="map">
+                <div class="mapWrapper">
+                  <a href=""><i class="fas fa-map-marker-alt"></i>View on Map</a>
+                </div>
+              </div>
+            </ul>
+            <ul class="col-sm-4 payment">
+              <div class="information">
+                <h2>We Using</h2>
+                <h3>Safe Payments</h3>
+              </div>
+              <div class="navi">
+                <ul class="flex a-start">
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/skril-1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/palypal-1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/american_express-1.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="secured">
+                <h2>Secured by:</h2>
+                <ul class="flex a-start">
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/norton_av_logo1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/mcAfee_logo1.png" alt=""></li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="col-sm-4 flex">
+              <ul class="Quick more-infor">
+                <h3>Quick  Links</h3>
+                <li><a href="">Support Center</a></li>
+                <li><a href="">Term & Conditions</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Privacy Pollicy</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Products Return</a></li>
+                <li><a href="">FAQS</a></li>
+              </ul>
+              <ul class="Stores more-infor">
+                <h3>Our Stores</h3>
+                <li><a href="">New York</a></li>
+                <li><a href="">London SF</a></li>
+                <li><a href="">Cockfosters BF</a></li>
+                <li><a href="">Los Angeles</a></li>
+                <li><a href="">Chicago</a></li>
+                <li><a href="">Las Vegas</a></li>
+                <li><a href="">Albarto</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="elementor-footer-section">
+      <div class="container">
+        <div class="elementor-wrap flex j-between">
+          <h2 class="elementskit-title">© 2018 XpeedStudio All Rights Reserved</h2>
+          <div class="infor-navigation">
+            <ul class="flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a>
+              </li>
+              <li><a href="#"><i class="fab fa-instagram"></i>Intagram</a></li>           
+            </ul>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

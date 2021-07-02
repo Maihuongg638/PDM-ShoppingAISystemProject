@@ -1,0 +1,400 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-between {
+	justify-content: space-between;
+}
+
+.Admin {
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	width: 100%;
+	height: 1100px;
+}
+
+.Admin h1,
+.Admin h2,
+.Admin h3,
+.Admin h4,
+.Admin h5,
+.Admin h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+.Admin .container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.Admin section#sidebar {
+	width: 20%;
+	height: auto;
+	height: 100%;
+	color: #fff;
+	background: #eb5;
+}
+
+.Admin section#sidebar .sidebar-brand {
+	width: 100%;
+	height: 250px;
+	padding: 0 40px 50px;
+}
+
+.Admin section#sidebar .sidebar-brand img {
+	width: 80%;
+}
+
+.Admin section#sidebar .sidebar-menu {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.Admin section#sidebar .sidebar-menu ul {
+	display: block;
+}
+
+.Admin section#sidebar .sidebar-menu ul li {
+	list-style: all .5s ease;
+}
+
+.Admin section#sidebar .sidebar-menu ul li a {
+	font-size: 16px;
+	display: flex;
+	margin-left: 20px;
+	padding: 10px 40px;
+	text-align: center;
+	color: #333;
+	justify-content: space-arround;
+	align-items: center;
+}
+
+.Admin section#sidebar .sidebar-menu ul li a span {
+	margin-left: 30px;
+}
+
+.Admin section#sidebar .sidebar-menu ul li a i {
+	color: #857d73;
+}
+
+.Admin section#sidebar .sidebar-menu ul li:hover {
+	background: sandybrown;
+}
+
+.Admin section#main-content {
+	float: right;
+	width: 80%;
+	height: auto;
+	background: #dae4eb;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content header {
+	font-size: 20px;
+}
+
+.Admin section#main-content header .header-left {
+	float: left;
+	width: 33%;
+	padding: 20px;
+}
+
+.Admin section#main-content header .header-left p {
+	color: #bbb;
+}
+
+.Admin section#main-content header .header-left h2 {
+	font-family: nexa !important;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.Admin section#main-content header .header-left h2 i {
+	margin-right: 10px;
+}
+
+.Admin section#main-content header .header-left input.search-bar {
+	font-size: 16px;
+	font-style: italic;
+	width: 50%;
+	padding: 8px 12px;
+	transition: width 1s ease;
+	border: 2px solid #bbb;
+	border-radius: 20px;
+}
+
+.Admin section#main-content header .header-left input.search-bar:focus {
+	width: 95%;
+	border: 2px solid #fd5a5e;
+	outline: none;
+}
+
+.Admin section#main-content header .header-left .search {
+	line-height: 35px;
+	width: 35px;
+	height: 35px;
+	margin-left: -35px;
+	text-align: center;
+	color: #fff;
+	border-top-right-radius: 50px 50px;
+	border-bottom-right-radius: 50px 50px;
+	background: #fd5a5e;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content header .header-left .search:hover {
+	background: #9fbbdf;
+}
+
+.Admin section#main-content .main-content-info .card-box {
+	font-size: 25px;
+	float: left;
+	width: 21%;
+	margin-top: 50px;
+	margin-right: 2%;
+	margin-left: 2%;
+	padding: 25px;
+	color: #fff;
+	border-radius: 10px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content .main-content-info .card-box:hover {
+	opacity: .7;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-num {
+	color: #fff;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-h {
+	position: relative;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-h::after {
+	font-family: 'FONTAWESOME';
+	position: absolute;
+	right: 0;
+	content: '\f0c0';
+	color: #fff;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-ord {
+	position: relative;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-ord::after {
+	font-family: 'FONTAWESOME';
+	position: absolute;
+	right: 0;
+	content: '\f0a3';
+	color: #fff;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-pro {
+	position: relative;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-pro::after {
+	font-family: 'FONTAWESOME';
+	position: absolute;
+	right: 0;
+	content: '\f15b';
+	color: #fff;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-inc {
+	position: relative;
+}
+
+.Admin section#main-content .main-content-info .card-box .cus-inc::after {
+	font-family: 'FONTAWESOME';
+	position: absolute;
+	right: 0;
+	content: '\f155';
+	color: #fff;
+}
+
+.Admin section#main-content .content-pro-par {
+	height: auto;
+}
+
+.Admin section#main-content .content-pro-par .borderfull {
+	height: auto;
+	margin: 50px 0;
+	padding: 20px;
+	border: 2px solid sandybrown;
+	border-radius: 20px;
+}
+
+.Admin section#main-content .content-pro-par .title h1 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	color: #616161;
+}
+
+.Admin section#main-content .content-pro-par .title h1:hover {
+	color: #9fbbdf;
+}
+
+.Admin section#main-content .content-pro-par .title button {
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content .content-pro-par .title button a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.Admin section#main-content .content-pro-par .title button:hover {
+	background: linear-gradient(45deg, #055ed3 0%, #616161 100%);
+}
+
+.Admin section#main-content .content-pro-par .title button:hover a {
+	color: #fed700;
+}
+
+.Admin section#main-content .content-pro-par .pro-table {
+	float: left;
+	width: 63%;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers {
+	font-size: 1.2em;
+	display: block;
+	width: auto;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+	border-collapse: collapse;
+	color: #444;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers thead tr th {
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers thead tr th.first {
+	width: 10%;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers thead tr th.second {
+	width: 20%;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers thead tr th.third {
+	width: 30%;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers thead tr th.fourth {
+	width: 20%;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers tbody .Table-customer-content {
+	line-height: 65px;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px solid #fed700;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers tbody .Table-customer-content td {
+	margin-top: 4px;
+	text-align: center;
+	text-align: center;
+	color: #616161;
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers tbody .Table-customer-content td.user-cart a {
+	padding: 5px;
+	cursor: pointer;
+	color: #333;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.Admin section#main-content .content-pro-par .pro-table table#Customers tbody .Table-customer-content td.user-cart a:hover {
+	color: #9fbbdf;
+}
+
+.Admin section#main-content .content-pro-par .cus-table {
+	float: right;
+	width: 35%;
+	margin-top: 50px;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order {
+	font-size: 1.2em;
+	display: block;
+	width: auto;
+	width: 100%;
+	margin: auto;
+	margin-left: 20px;
+	padding-bottom: 50px;
+	border-collapse: collapse;
+	color: #444;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order thead tr th {
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order thead tr th.first {
+	width: 33%;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order thead tr th.second {
+	width: 33%;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order thead tr th.third {
+	width: 33%;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order tbody .Table-Order-content {
+	line-height: 65px;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px solid #fed700;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order tbody .Table-Order-content td {
+	margin-top: 4px;
+	text-align: center;
+	text-align: center;
+	color: #616161;
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order tbody .Table-Order-content td.user-cart a {
+	padding: 5px;
+	cursor: pointer;
+	color: #333;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.Admin section#main-content .content-pro-par .cus-table table#product-Order tbody .Table-Order-content td.user-cart a:hover {
+	color: #9fbbdf;
+}
+

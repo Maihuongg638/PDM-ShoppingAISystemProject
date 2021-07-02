@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <title>Final Project</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/reset.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/finalproject.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/all.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.carousel.min.css') }}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/owl.theme.default.min.css')}}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/option.css')}}">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/botchat.css')}}">
+
+
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+   <!-- <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+   integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+   crossorigin="anonymous"></script>
+<script src="{{ url_for('static', filename='js/owl.autoplay.js') }}"></script>
+<script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/huong.js') }}"></script>
+<script src="{{ url_for('static', filename='js/botchat.js') }}"></script>
+<script src="{{ url_for('static', filename='js/showCategories.js') }}"></script>
+<script src="{{ url_for('static', filename='js/finalProducts.js') }}"></script>
+<body>
+  <div id="bot_chat">
+    <img src="https://lh3.googleusercontent.com/proxy/FNirbGTLU6Nzs4Q2EymoTOS5-M2E7lplHvpuv6SmZqCo-rjPkJ7kbHQAVsEGuOtx9lNnEMw6_NQm7ays4e_VphAYcL9DQkaXZDBEWA" alt="" class="bot_chat-logo">
+    <div class="hidden-header_botchat"></div>
+    <iframe class="chat_bot-wroking"
+        style="border: 2px solid yellow; border-radius: 20px;"
+        allow="microphone;"
+        width="265"
+        height="280"
+        src="https://console.dialogflow.com/api-client/demo/embedded/38ab177c-cd4b-4143-9a53-33fc8fd3be7e">
+    </iframe>
+  </div>
+  <div class="icon-bot_chat" onclick="FunctionBotChat()">
+    <!-- <i class="fab fa-facebook-messenger bot_chat-icon"></i> -->
+    <i class="fab fa-reddit-alien bot_chat-icon"></i>
+  </div>
+  <div class="Full-Web"> 
+    <div class="header-banner">
+      <div class=" header-information">
+        <div class="container  flex j-between ">
+          <nav class="navigation flex">
+            <ul class="flex">
+                <li>
+                    <span><i class="fas fa-truck-moving"></i></span>
+                    <span class="name">Free Delivery</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-globe-africa"></i></span>
+                    <span class="name">Returns Policy</span>
+                </li>
+            </ul>
+            <ul class="icons flex  j-between a-center">
+                <li><span>Follow Us</span></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-twitter"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-pinterest-p"></i></span></a></li>
+                <li class="icon"><a href="#"><span><i class="fab fa-instagram"></i></span></a></li>
+            </ul>
+        </nav>
+        <a href="/signin" class="login"><span>Login</span></a>
+        </div>
+    </div>
+    <div class="header-navigation ">
+      <div class="container scrolls flex j-between">
+        <a href="" class="logo"><img src="dist/img/logo.png" alt=""></a>
+        <nav class="navigation">
+            <ul class="flex"> 
+                <li class="Home">
+                  <a href="/">Home<i class="fas fa-chevron-down"></i></a>
+                  <div class="drop1">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-one.jpg" alt="">
+                            <p>Home 01</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-two1.jpg" alt="">
+                            <p>Home 02</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-three1.jpg" alt="">
+                            <p>Home 03</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-four1.jpg" alt="">
+                            <p>Home 04</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-six1.jpg" alt="">
+                            <p>Home 05</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-eight1.jpg" alt="">
+                            <p>Home 06</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-seven1-1536x1363.png" alt="">
+                            <p>Home 07</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-nine1.jpg" alt="">
+                            <p>Home 08</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-nine1-1536x1363.png" alt="">
+                            <p>Home 09</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-one.jpg" alt="">
+                            <p>Wc Marketplace</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-one.jpg" alt="">
+                            <p>Dokan Marketplace</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Furniture-1.png" alt="">
+                            <p>Furniture</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Grocery-1.png" alt="">
+                            <p>Grocery</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Parts-1.png" alt="">
+                            <p>Auto Parts</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Watch-1.png" alt="">
+                            <p>Watch</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Shoe-1.png" alt="">
+                            <p>Shoe</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Eye-Glass-1.png" alt="">
+                            <p>Eye Glass</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/Jewelry-1.png" alt="">
+                            <p>Jewelry</p>
+                        </div>
+                        <div class="col-sm-3">
+                            <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/07/home-one.jpg" alt="">
+                            <p>Home RTL</p>
+                        </div>
+                    </div>
+                </div>
+                </li>
+                <li>
+                  <a href="">Page <i class="fas fa-chevron-down"></i></a>
+                  <ul class="dropdown">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Terms and conditions</a></li>
+                    <li class="Products">
+                      <a href="">Products<i class="fas fa-angle-right"></i></a>
+                      <ul class="drop21">
+                        <ul>
+                            <li><a href="">Product Category</a></li>
+                            <li><a href="">Product Category V2</a></li>
+                            <li><a href="">Product Details</a></li>
+                            <li><a href="">Vendor Page</a></li>
+                        </ul>
+                      </ul>
+                    </li>
+                </ul>
+                </li>
+                <li class="Shop">
+                  <a href="">Shop <i class="fas fa-chevron-down"></i></a>
+                  <div class="New">
+                    <p>New</p>
+                    <div class="TRShapes"></div>
+                  </div>
+                  <ul class="dropdown">
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href="">Track Order</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="">Blog <i class="fas fa-chevron-down"></i></i></a>
+                    <ul class="dropdown">
+                      <li><a href="">Blog</a></li>
+                      <li><a href="">Blog Single</a></li>
+                    </ul>
+                </li>
+                <li class="Gallery">
+                  <a href="">Gallery<i class="fas fa-chevron-down"></i></a>
+                  <div class="Hot">
+                    <p>Hot</p>
+                    <div class="TRShape"></div>
+                  </div>
+                  <div class="drop4">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <ul>
+                                <h3>Theme Elements</h3>
+                                <p>Pages that every website needs.</p>
+                                <li><a href="">Accessories</a></li>
+                                <li><a href="">Camera</a></li>
+                                <li><a href="">Headphone</a></li>
+                                <li><a href="">Gamepad</a></li>
+                                <li><a href="">Laptop</a></li>
+                                <li><a href="">Mobile</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul>
+                                <h3>Theme Elements</h3>
+                                <p>Pages that every website needs.</p>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Product Details</a></li>
+                                <li><a href="">Wishlist</a></li>
+                                <li><a href="">Product Category</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Blog Single</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul>
+                                <h3>Theme Elements</h3>
+                                <p>Pages that every website needs.</p>
+                                <li><a href="">Product Category V2</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><a href="">Terms and Conditions</a></li>
+                                <li><a href="">FAQ</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">My account</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <ul>
+                                <h3>Theme Elements</h3>
+                                <p>Pages that every website needs.</p>
+                                <p class="ppp">The Apple Watch, with its inbuilt speaker <br> 
+                                  and microphone, gives you the freedom <br>
+                                    to call your friends directly from your <br>
+                                    wrist. This splash-resistant.</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </li>
+            </ul>             
+          </nav>
+          <div class="icons-symbol">
+              <ul class="flex">
+                <li><a href=""><span class="num">0</span><i class="far fa-heart fa-2x"></i>   </a></li>
+                <li><a href=""><span class="num bg-yellow">0</span></a><i class="fas fa-shopping-bag fa-2x"></i> </li>
+              </ul>
+          </div>       
+      </div>
+    </div>
+    <div class="container">
+      <div class="tapSearch flex j-between">
+        <div class="categories">
+          <button class="Show-model">
+            <ul class="flex j-beteen">
+              <li><i class="fas fa-list"></i></li>
+              <li>All Categories</li>
+              <li> <i class="fas fa-chevron-down"></i></li>
+            </ul>
+          </button>
+          <div class="model">
+            <ul class="dropdown-Click a-center">
+              <li class="Electronics">
+                <span>
+                  <i class="far fa-lightbulb"></i>
+                  <a href="#">Electronics<i class="fas fa-chevron-down fa-rotate-270" style="margin-left: 70px"></i></a>
+                </span>
+                <div class="drop-electronics">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="ancesories">
+                        <h3>Acessories</h3>
+                        <ul>
+                          <li><a href="">Samsung TV</a></li>
+                          <li><a href="">Mobile</a></li>
+                          <li><a href="">Laptop</a></li>
+                          <li><a href="">Headphone</a></li>
+                          <li><a href="">Camera</a></li>
+                        </ul>
+                      </div>
+                      <div class="tops">
+                        <h3>Tops</h3>
+                        <ul>
+                          <li><a href="">Samsung TV</a></li>
+                          <li><a href="">Mobile</a></li>
+                          <li><a href="">Laptop</a></li>
+                          <li><a href="">Headphone</a></li>
+                          <li><a href="">Camera</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="sub-col">
+                        <h3>Bottoms</h3>
+                        <ul>
+                          <li><a href="">Speaker</a></li>
+                          <li><a href="">Portable</a></li>
+                          <li><a href="">Google Glass</a></li>
+                          <li><a href="">Drone</a></li>
+                          <li><a href="">Bluetooth</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-col">
+                        <h3>Hot Categories</h3>
+                        <ul>
+                          <li><a href="">Speaker</a></li>
+                          <li><a href="">Portable</a></li>
+                          <li><a href="">Google Glass</a></li>
+                          <li><a href="">Drone</a></li>
+                          <li><a href="">Bluetooth</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="sub-col">
+                        <h3>Bottoms</h3>
+                        <ul>
+                          <li><a href="">Watch</a></li>
+                          <li><a href="">Speaker</a></li>
+                          <li><a href="">Projector</a></li>
+                          <li><a href="">Gamepad</a></li>
+                          <li><a href="">3d Glass</a></li>
+                        </ul>
+                      </div>
+                      <div class="sub-col">
+                        <h3>Outwear</h3>
+                        <ul>
+                          <li><a href="">Watch</a></li>
+                          <li><a href="">Speaker</a></li>
+                          <li><a href="">Projector</a></li>
+                          <li><a href="">Gamepad</a></li>
+                          <li><a href="">3d Glass</a></li>
+                        </ul>
+                      </div>
+                    </div>             
+                  </div>
+                </div>
+              </li>
+              <li class="Men-fashion">
+                <span>
+                  <i class="fas fa-tshirt"></i>
+                  <a href="#">Men's Fashion<i class="fas fa-chevron-down fa-rotate-270" style="margin-left: 40px"></i></a>
+                </span>
+              </li>
+              <li class="Women-fashion">
+                <span>
+                  <i class="far fa-bookmark"></i>
+                  <a href="#">Women's Fashion<i class="fas fa-chevron-down fa-rotate-270"></i></a>
+                </span>
+              </li>
+              <li class="Office">
+                <span>
+                  <i class="fas fa-thumbtack"></i>
+                  <a href="#">Office & Security<i class="fas fa-chevron-down fa-rotate-270" style="margin-left: 35px"></i></a>
+                </span>
+              </li>
+              <li class="Camera">
+                <span>
+                  <i class="fas fa-tshirt"></i>
+                  <a href="#">Camera<i class="fas fa-chevron-down fa-rotate-270" style="margin-left: 80px"></i></a>
+                </span>
+              </li>
+              <li><span><i class="fas fa-rocket"></i><a href="">Drone</a></span></li>
+              <li><span><i class="fa fa-mobile" aria-hidden="true"></i><a href="">Gamepad</a></span></li>
+              <li><span><i class="fas fa-phone-volume"></i><a href="">Mobile</a></span></li>
+              <li><span><i class="fas fa-volume-up"></i><a href="">Speaker</a></span></li>
+            </ul>              
+          </div>           
+        </div>
+        <div class="search-container">
+        <form action="/search/" method="post">
+          <div class="searching flex">
+            <input type="text" placeholder="Find your product" name="search-data">
+            <div class="allCategoriesSearch">
+              <button class="Show-option">
+                <ul class="flex Option-list">
+                  <li>All Categories</li>
+                  <li> <i class="fas fa-chevron-down"></i></li>
+                </ul>        
+              </button>
+              <div class="option">
+                <ul class="select-option">
+                  <li>All Categories</li>
+                  <li>Women Clothing</li>
+                  <li>Mens Clothing</li>
+                  <li>Minimal Furniture</li>
+                  <li>Minimal Product</li>
+                  <li>Fruits</li>
+                  <li>Vetgetables</li>
+                  <li>Featured Product</li>
+                  <li>Computer Accessories</li>
+                  <li>Gaming Accessories</li>
+                  <li>Wireless</li>
+                  <li>Google Glass</li>
+                  <li>Bluetooth</li>
+                  <li>Portable</li>
+                  <li>Speaker</li>
+                  <li>Projector</li>
+                  <li>3d Glass</li>
+                  <li>Gamepad</li>
+                  <li>Watch</li>
+                  <li>Light</li>
+                  <li>Drone</li>
+                  <li>Samsung TV</li>
+                  <li>Camera</li>
+                  <li>Headphone</li>
+                  <li>LED Television</li>
+                  <li>Mobile</li>
+                  <li>Laptop</li>
+                </ul>          
+              </div>
+            </div>
+            <div class="searchContainer">
+              <div class="btn-search">
+                <button name = "search-btn" type = "submit">
+                  <i class="fas fa-search "></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        </div> 
+        <div class="Black-Friday">
+          <div class="BF-content">
+              <h4>BLACK FRIDAY</h4>
+            <span>Get 45% Off!</span>
+        </div>
+      </div>         
+      </div>
+    </div>  
+    </div>
+    <div class="brand flex" style="margin-top: 50px;">
+      <div style="width: 20%;height: 642px; background-color: #fed700;">
+        <div class = "flex a-center j-center" style="width: 100%; height: 50%;">
+          <img style="width: 100%;height: 100% ; object-fit: scale-down;" src="https://brandslogo.net/wp-content/uploads/2013/05/rolex-eps-vector-logo.png" alt="">
+        </div>
+        <div class = "flex a-center j-center" style="width: 100%; height: 50%;">
+          <img style="width: 100%;height: 100% ; object-fit: scale-down;" src="https://pngimg.com/uploads/gucci/gucci_PNG19.png" alt="">
+        </div>
+      </div>
+      <div class="container flex a-center j-center" style="width: 60%; padding: 0;">
+        <video width="100%"  autoplay>
+          <source  style="object-fit: scale-down; height: 100%;" src="../static/img/y2mate.com - Rolex Cosmograph Daytona_1080p.mp4" type="video/mp4">
+        </video> 
+      </div>
+      <div style="width: 20%;height: 642px; background-color: #fed700;">
+        <div class = "flex a-center j-center" style="width: 100%; height: 50%;">
+          <img style="width: 100%;height: 100% ; object-fit: scale-down;" src="https://cdn.iconscout.com/icon/free/png-512/chanel-202547.png" alt="">
+        </div>
+        <div class = "flex a-center j-center" style="width: 100%; height: 50%;">
+          <img style="width: 100%; height: 100% ; object-fit: scale-down;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dior_Logo.svg/640px-Dior_Logo.svg.png" alt="">
+        </div>
+      </div>
+  </div>
+    <div class="element-animation-page">
+      <div class="slider">
+        <div class="container">
+           <div class="owl-carousel owl-theme-default" id="latest-product">
+              <!-- one item of slider -->
+              <div class="item">
+                 <div class="image-left">
+                    <img
+                       src="../static/img/model1.png"
+                       alt="">
+                 </div>
+  
+                 <div class="content">
+                    <p>entrie big collection</p>
+                    <h2>shop wise with price comparisons</h2>
+  
+                    <div class="btns">
+                       <button class="collection">view collection</button>
+                       <button class="categories">categories</button>
+                    </div>
+                 </div>
+  
+                 <div class="imgae-right">
+                    <img
+                       src="../static/img/model2.png"
+                       alt="">
+                 </div>
+              </div>
+              <!-- end item  -->
+  
+              <!-- one item of slider -->
+              <div class="item">
+                 <div class="image-left">
+                    <img
+                       src="../static/img/model1.png"
+                       alt="">
+                 </div>
+
+                 <div class="content">
+                    <p>entrie big collection</p>
+                    <h2>shop wise with price comparisons</h2>
+  
+                    <div class="btns">
+                       <button class="collection">view collection</button>
+                       <button class="categories">categories</button>
+                    </div>
+                 </div>
+  
+                 <div class="imgae-right">
+                    <img
+                       src="../static/img/model2.png"
+                       alt="">
+                 </div>
+              </div>
+              <!-- end item  -->
+  
+              <!-- one item of slider -->
+              <div class="item">
+                 <div class="image-left">
+                    <img
+                       src="../static/img/model1.png"
+                       alt="">
+                 </div>
+  
+                 <div class="content">
+                    <p>entrie big collection</p>
+                    <h2>shop wise with price comparisons</h2>
+  
+                    <div class="btns">
+                       <button class="collection">view collection</button>
+                       <button class="categories">categories</button>
+                    </div>
+                 </div>
+  
+                 <div class="imgae-right">
+                    <img
+                       src="../static/img/model2.png"
+                       alt="">
+                 </div>
+              </div>
+              <!-- end item  -->
+           </div>
+        </div>
+     </div>
+    </div>
+    <div class="Options">
+    <div class="right" style="height: 965px;">
+      <div class="Top Women" style="height: 50%;">
+          <div class="Top-Opacity"></div>
+          <div class="Top-Content">
+              <div class="Content-Inside">
+                  <h3><a href="/all">Women Clothing</a></h3>
+                  <ul>
+                      {% for item in listcategory %}
+                        <li><a href="/{{item[0]}}">{{item[0]}}</a></li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <div class="imagehaha a-center j-center flex" style="width : 216px; height: 50%;" >
+        <div class="Mid-Owl owl-carousel owl-carousel-2 owl-theme" style="width: 100%; object-fit: scale-down;">
+          <div class="Mid-Owl-Img">
+              <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2018/07/product-block-slider-women-3.jpg" alt="">
+          </div>
+          <div class="Mid-Owl-Img">
+              <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2018/07/product-block-slider-women-2.jpg" alt="">
+          </div>
+          <div class="Mid-Owl-Img">
+              <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2018/07/product-block-slider-women-1.jpg" alt="">
+          </div>
+          <div class="Mid-Owl-Img">
+              <img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2018/07/product-block-slider-women-4.jpg" alt="">
+          </div>
+      </div>
+    </div>
+  </div>
+      <div class="Bottom" style="margin-left: 5px; margin-right: 5px; height: 965px; overflow-y: scroll; overflow-x: hidden;">
+          <div class="row">
+              {% for item in listitem %}
+              <div class="col-sm-3">
+                <div class="Bottom-Content flex a-center j-center">
+                  <div class="pro flex j-center a-center"><div class="subpro flex a-center j-between"><img src="{{item[2]}}" alt="" ></div></div>
+                    <div class="Content-Name">
+                      <p>
+                        <a href="/product/{{item[0]}}" id = "nameofp">{{item[1]}}</a>
+                      </p>             
+                      <span>${{item[3]}}</span>
+                      <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </p>
+                      <div class="addtocart">
+                        <div class="shopping-trending">
+                          <i class="fas fa-shopping-cart"></i>
+                          <a href="/signin"><span>Add to cart</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              {% endfor %}
+
+          </div>
+      </div>
+      <div class="Mid" style="height: 965px; object-fit: scale-down;">
+          <div class="Mid-Owl owl-carousel owl-carousel-2 owl-theme" style="height:50%;">
+            <div class="Mid-Owl-Img">
+                <img src="../static/img/model21.png" alt="" style="object-fit: scale-down;">
+            </div>
+            <div class="Mid-Owl-Img">
+                <img src="../static/img/model22.png" alt="" style="object-fit: scale-down;">
+            </div>
+            <div class="Mid-Owl-Img">
+                <img src="../static/img/model23.png" alt="" style="object-fit: scale-down;">
+            </div>
+            <div class="Mid-Owl-Img">
+              <img src="../static/img/model24.png" alt="" style="object-fit: scale-down;">
+            </div>
+          </div>
+          <div class="imagehaha" style="height:50%; object-fit: scale-down;">
+            <img src="../static/img/aaa.png" alt="" style="width: 100%; height: 100%; object-fit: scale-down;">
+          </div>
+      </div>
+    </div>
+
+    <div class="product-week">
+      <div class="container">
+      </div>
+    </div>
+    <div class="special-offers">
+      <div class="container">
+        <div class="pd-wrap">
+            <div class="pd-content flex j-between">
+                <h2>Hurry up! Special offers.</h2>
+                <ul class="flex j-between">
+                    <li class="on-sell">
+                        <a href="">On Sell</a>
+                        <div class="Down">
+                            <div class="Down-Triangle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Hot Sell</a>
+                        <div class="Down">
+                            <div class="Down-Triangle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Trend</a>
+                        <div class="Down">
+                            <div class="Down-Triangle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Best Sell</a>
+                        <div class="Down">
+                            <div class="Down-Triangle"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="product">
+                <div class="owl flex j-between">
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                      <div class="img-box flex a-center">
+                          <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                          <div class="media-content">
+                              <div class="star-heart flex j-between">
+                                  <div class="Star">
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="fas fa-star"></i>
+                                      <i class="far fa-star"></i>
+                                  </div>
+                                  <i class="far fa-heart"></i>
+                              </div>
+                              <p><a href="">Camera Drone</a></p>
+                              <div class="Price">
+                                  <span class="blurred">$720.00</span>
+                                  <span class="show">$540.00</span>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 ">
+                    <div class="img-box flex a-center">
+                        <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/camera-drone-125x125.png" alt=""></a>
+                        <div class="media-content">
+                            <div class="star-heart flex j-between">
+                                <div class="Star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <p><a href="">Camera Drone</a></p>
+                            <div class="Price">
+                                <span class="blurred">$720.00</span>
+                                <span class="show">$540.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="speaker">
+      <div class="container ">
+        <div class="speaker1 flex">
+          <a class="big-img" class="" href="#"><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/banner-campaign-3-1.png" alt=""></a>
+          <a class="small-img" href="#"><img  src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/banner-campaign-4-1.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <div class="game-controller">
+      
+    </div>
+    <div class="container">
+      <div class="products-hot-new">
+        <div class="pd-content flex j-between">
+          <h2>Hot New Arrivals</h2>
+          <ul class="category flex j-between">
+            <li class="active" data-category="on-arrival">
+                <a href="">On Sell</a>
+                <div class="Down">
+                    <div class="Down-Triangle"></div>
+                </div>
+            </li>
+            <li  data-category="hot-arrival">
+                <a href="">Hot Sell</a>
+                <div class="Down">
+                    <div class="Down-Triangle"></div>
+                </div>
+            </li>
+            <li data-category="Trend-arrival">
+                <a  href="">Trend</a>
+                <div class="Down">
+                    <div class="Down-Triangle"></div>
+                </div>
+            </li>
+            <li data-category="best-arrival" >
+                <a href="">Best Sell</a>
+                <div class="Down">
+                    <div class="Down-Triangle"></div>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="products-owl">
+          <div class="owl-carousel owl owl-theme">
+            <!-- <div class="xs-product-category a-center">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price ">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price flex">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price flex">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div>
+            <div class="xs-product-category">
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/05/19-158x158.png" alt=""></a>
+              <h4 class="product-title">Remote Drone</h4>
+              <span class="price">
+                <del><span><span>$</span>680.00</span></del>
+                <ins><span><span>$</span>660.00</span></ins>
+              </span>      
+            </div> -->
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="sponsors">
+      <div class="container">
+        <div class="sponsors-wrap">
+          <ul class="flex j-between">
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_1.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_2.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_3.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_4.png" alt=""></a>
+            </li>
+            <li>
+              <a href=""><img src="https://demo.xpeedstudio.com/marketo/home3/wp-content/uploads/sites/3/2018/04/sponsors_5.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="submit-mail">
+      <div class="container get-Update flex j-between">
+        <div class="soluoc flex">
+          <img src="dist/img/email.PNG" alt="">
+          <div class="intro">
+            <h3>
+              <span>Newsletter & Get Updates</span>
+            </h3>
+            <p>Sign up for our newsletter to get up-to-date from us</p>
+          </div>
+        </div>
+        <div class="input-mail">
+          <form class="flex j-between a-center" action="#" method="post">
+            <input type="email" name="EMAIL" id="sx-email" placeholder="Enter Your Mail Here ....">
+            <input type="submit" id="sx-submit" value="SUBMIT">
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer-section">
+      <div class="btn-backToTop">
+        <div class="totop-content flex">
+          <a href="#">BACK TOP</a>
+          <i class="fas fa-arrow-right" ></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-contain">
+          <div class="row">
+            <ul class="col-sm-4">
+              <div class="element-image">
+                <img src="dist/img/logo.png" alt="">
+              </div>
+              <div class="information">
+                <h2>Got Question? Call us 24/7</h2>
+                <h3>[80] 1017 197</h3> <br>
+                <p>17 Princess Road, London, Greater <br>
+                   London NW1 8JR, UK</p>
+              </div>
+              <div class="map">
+                <div class="mapWrapper">
+                  <a href=""><i class="fas fa-map-marker-alt"></i>View on Map</a>
+                </div>
+              </div>
+            </ul>
+            <ul class="col-sm-4 payment">
+              <div class="information">
+                <h2>We Using</h2>
+                <h3>Safe Payments</h3>
+              </div>
+              <div class="navi">
+                <ul class="flex a-start">
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/skril-1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/palypal-1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/american_express-1.png" alt=""></li>
+                </ul>
+              </div>
+              <div class="secured">
+                <h2>Secured by:</h2>
+                <ul class="flex a-start">
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/norton_av_logo1.png" alt=""></li>
+                  <li><img src="https://demo.xpeedstudio.com/marketo/wp-content/uploads/2020/06/mcAfee_logo1.png" alt=""></li>
+                </ul>
+              </div>
+            </ul>
+            <ul class="col-sm-4 flex">
+              <ul class="Quick more-infor">
+                <h3>Quick  Links</h3>
+                <li><a href="">Support Center</a></li>
+                <li><a href="">Term & Conditions</a></li>
+                <li><a href="">Shipping</a></li>
+                <li><a href="">Privacy Pollicy</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Products Return</a></li>
+                <li><a href="">FAQS</a></li>
+              </ul>
+              <ul class="Stores more-infor">
+                <h3>Our Stores</h3>
+                <li><a href="">New York</a></li>
+                <li><a href="">London SF</a></li>
+                <li><a href="">Cockfosters BF</a></li>
+                <li><a href="">Los Angeles</a></li>
+                <li><a href="">Chicago</a></li>
+                <li><a href="">Las Vegas</a></li>
+                <li><a href="">Albarto</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="elementor-footer-section">
+      <div class="container">
+        <div class="elementor-wrap flex j-between">
+          <h2 class="elementskit-title">© 2018 XpeedStudio All Rights Reserved</h2>
+          <div class="infor-navigation">
+            <ul class="flex">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-pinterest-p"></i>Pinterest</a>
+              </li>
+              <li><a href="#"><i class="fab fa-instagram"></i>Intagram</a></li>           
+            </ul>
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

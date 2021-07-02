@@ -1,0 +1,33 @@
+{
+  "name": "fe-template",
+  "version": "1.0.0",
+  "description": "simple templete for fe-developers",
+  "author": "NHAT.BUI",
+  "url": "https://www.facebook.com/Cheatsomething",
+  "license": "MIT License",
+  "keywords": [
+    "fe template"
+  ],
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "devDependencies": {
+    "es6-promise": "^4.2.8",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "browser-sync": "^2.26.7"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "surge": "^0.23.0"
+  }
+}

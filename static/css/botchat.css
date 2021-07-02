@@ -1,0 +1,38 @@
+#bot_chat {
+    position: fixed;
+    bottom: 50px;
+    z-index: 2;
+    right: 20px;
+  }
+  div.icon-bot_chat {
+    position: fixed;
+    bottom: 9px;
+    z-index: 2;
+    right: 15px;
+  }
+  .bot_chat-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: darkgoldenrod;
+  }
+  div.bot_chat-icon:focus div.bot_chat {
+    display: block;
+  }
+  .b-agent-demo_header {
+    display: none;
+  }
+  .hidden-header_botchat {
+    height: 40px;
+    width: 265px;
+    margin: 0 2px;
+    background-color: white;
+    position: relative;
+    top: 111px;
+  }
+  .bot_chat-logo {
+    height: 65px;
+    width: 60px;
+    position: relative;
+    top: 115px;
+    left: 13px;
+  }

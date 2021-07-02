@@ -1,0 +1,601 @@
+* {
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+* a {
+	transition: all .3s ease;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-between {
+	justify-content: space-between;
+}
+
+.AddNewProduct {
+	display: flex;
+	width: 100%;
+	height: 1100px;
+}
+
+.AddNewProduct .container {
+	max-width: 1330px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.AddNewProduct section#sidebar {
+	width: 20%;
+	height: auto;
+	height: 100%;
+	color: #fff;
+	background: #eb5;
+}
+
+.AddNewProduct section#sidebar .sidebar-brand {
+	width: 100%;
+	height: 250px;
+	padding: 0 40px 50px;
+}
+
+.AddNewProduct section#sidebar .sidebar-brand img {
+	width: 80%;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu {
+	width: 100%;
+	margin-top: 30px;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul {
+	display: block;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li {
+	list-style: all .5s ease;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li a {
+	font-size: 16px;
+	display: flex;
+	margin-left: 20px;
+	padding: 10px 40px;
+	text-align: center;
+	color: #333;
+	justify-content: space-arround;
+	align-items: center;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li a span {
+	margin-left: 30px;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li a i {
+	color: #857d73;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li:hover {
+	background: sandybrown;
+}
+
+.AddNewProduct section#sidebar .sidebar-menu ul li:hover a {
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section .content-pro-par {
+	height: auto;
+	border-bottom: 1px  #616161;
+}
+
+.AddNewProduct section .content-pro-par .borderfull {
+	height: auto;
+	margin: 50px 0 0;
+	padding: 20px;
+	border: 2px solid sandybrown;
+	border-radius: 20px;
+}
+
+.AddNewProduct section .content-pro-par .title h1 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	color: #616161;
+}
+
+.AddNewProduct section .content-pro-par .title h1:hover {
+	color: #9fbbdf;
+}
+
+.AddNewProduct section .content-pro-par .title button {
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section .content-pro-par .title button a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.AddNewProduct section .content-pro-par .title button:hover {
+	background: linear-gradient(45deg, #055ed3 0%, #616161 100%);
+}
+
+.AddNewProduct section .content-pro-par .title button:hover a {
+	color: #fed700;
+}
+
+.AddNewProduct section .content-pro-par .pro-table {
+	float: left;
+	width: 60%;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product {
+	font-size: 1.2em;
+	display: block;
+	width: auto;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+	border-collapse: collapse;
+	color: #444;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th {
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.second {
+	width: 5%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.third {
+	width: 35%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.fourth {
+	width: 15%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.fifth {
+	width: 15%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.sixth {
+	width: 15%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.seventh {
+	width: 10%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product thead tr th.eight {
+	width: 5%;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Table-product-content {
+	line-height: 65px;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px solid #fed700;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Table-product-content td {
+	margin-top: 4px;
+	text-align: center;
+	text-align: center;
+	color: #616161;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Table-product-content td.eight span {
+	padding: 5px;
+	cursor: pointer;
+	color: #333;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Table-product-content td.eight span:hover {
+	color: #9fbbdf;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Table-product-content:hover {
+	opacity: .7;
+	color: #333;
+	border: 2px solid silver;
+	background-color: #bad7fd;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product {
+	text-align: center;
+	border-top: 1px solid #abc0db;
+	justify-content: center;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .add,
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .update {
+	height: 35px;
+	padding: 12px 0;
+	padding-top: 20px;
+	border-radius: 5px;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .add #adP,
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .update #adP {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	width: 180px;
+	height: 45px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	cursor: pointer;
+	letter-spacing: .05em;
+	border-bottom: 1px solid #0071ff;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .add #adP a,
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .update #adP a {
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .add #adP:hover,
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .update #adP:hover {
+	background: linear-gradient(45deg, #055ed3 0%, #616161 100%);
+}
+
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .add #adP:hover a,
+.AddNewProduct section .content-pro-par .pro-table table#Product tbody .Add-product .update #adP:hover a {
+	color: #fed700;
+}
+
+.AddNewProduct section .content-pro-par .cat-table {
+	float: right;
+	width: 38%;
+	margin: auto;
+	margin-top: 50px;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat {
+	font-size: 1.2em;
+	display: block;
+	width: auto;
+	width: 100%;
+	margin: auto;
+	margin-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	border-collapse: collapse;
+	color: #444;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat thead tr th {
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat thead tr th.first {
+	width: 20%;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat thead tr th.second {
+	width: 50%;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat thead tr th.third {
+	width: 20%;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat thead tr th.fourth {
+	width: 10%;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .Table-cat-content {
+	line-height: 65px;
+	width: 100%;
+	height: 65px;
+	border-bottom: 1px solid #fed700;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .Table-cat-content td {
+	margin-top: 4px;
+	text-align: center;
+	text-align: center;
+	color: #616161;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .Table-cat-content:hover {
+	opacity: .7;
+	color: #333;
+	border: 2px solid silver;
+	background-color: #bad7fd;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category {
+	text-align: center;
+	border-top: 1px solid #abc0db;
+	justify-content: center;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category td {
+	height: 35px;
+	padding: 12px 0;
+	padding-top: 20px;
+	border-radius: 5px;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category td #AdCat {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	width: 200px;
+	height: 45px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	cursor: pointer;
+	letter-spacing: .05em;
+	color: #fff;
+	border-bottom: 1px solid #0071ff;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category td #AdCat a {
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category td #AdCat:hover {
+	background: linear-gradient(45deg, #055ed3 0%, #616161 100%);
+}
+
+.AddNewProduct section .content-pro-par .cat-table table#product-Cat tbody .add-category td #AdCat:hover a {
+	color: #fed700;
+}
+
+.AddNewProduct section#main-content {
+	float: right;
+	width: 80%;
+	height: auto;
+	border-bottom: 1px  #616161;
+	background: #dae4eb;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section#main-content header {
+	font-size: 20px;
+	border-bottom: 1px  #616161;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section#main-content header .header-left {
+	float: left;
+	width: 33%;
+	padding: 20px;
+}
+
+.AddNewProduct section#main-content header .header-left p {
+	color: #bbb;
+}
+
+.AddNewProduct section#main-content header .header-left h2 {
+	font-family: nexa !important;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.AddNewProduct section#main-content header .header-left h2 i {
+	margin-right: 10px;
+}
+
+.AddNewProduct section#main-content header .header-left input.search-bar {
+	font-size: 16px;
+	font-style: italic;
+	z-index: 1;
+	width: 60%;
+	padding: 8px 12px;
+	transition: width 1s ease;
+	border: 2px solid #bbb;
+	border-radius: 20px;
+}
+
+.AddNewProduct section#main-content header .header-left input.search-bar:focus {
+	width: 95%;
+	border: 2px solid #fd5a5e;
+	outline: none;
+}
+
+.AddNewProduct section#main-content header .header-left .search {
+	line-height: 35px;
+	width: 35px;
+	height: 35px;
+	margin-bottom: -12px;
+	margin-left: -35px;
+	text-align: center;
+	color: #fff;
+	border-top-right-radius: 50px 50px;
+	border-bottom-right-radius: 50px 50px;
+	background: #fd5a5e;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section#main-content header .header-left .search:hover {
+	background: #9fbbdf;
+}
+
+.AddNewProduct section#main-content .content-pro-par {
+	height: auto;
+	border-bottom: 1px  #616161;
+}
+
+.AddNewProduct section#main-content .content-pro-par .borderfull {
+	height: auto;
+	margin: 50px 0;
+	padding: 20px;
+	border: 2px solid sandybrown;
+	border-radius: 20px;
+}
+
+.AddNewProduct section#main-content .content-pro-par .title h1 {
+	font-size: 30px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+	color: #616161;
+}
+
+.AddNewProduct section#main-content .content-pro-par .title h1:hover {
+	color: #fed700;
+}
+
+.AddNewProduct section#main-content .content-pro-par label {
+	font-family: 'Dancing Script';
+	font-size: 20px;
+	display: block;
+	margin-bottom: 20px;
+	padding: 0 10px;
+	letter-spacing: 1px;
+	color: #333e48;
+}
+
+.AddNewProduct section#main-content .content-pro-par input.name,
+.AddNewProduct section#main-content .content-pro-par input.price,
+.AddNewProduct section#main-content .content-pro-par .img,
+.AddNewProduct section#main-content .content-pro-par #category,
+.AddNewProduct section#main-content .content-pro-par .description {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: .3em;
+	padding: 1em 3em 1em 1em;
+	letter-spacing: 1px;
+	color: #000;
+	border: 2px solid silver;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+	background: #e4c7ae;
+	justify-content: center;
+}
+
+.AddNewProduct section#main-content .content-pro-par input.name:hover,
+.AddNewProduct section#main-content .content-pro-par input.price:hover,
+.AddNewProduct section#main-content .content-pro-par .img:hover,
+.AddNewProduct section#main-content .content-pro-par #category:hover,
+.AddNewProduct section#main-content .content-pro-par .description:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #ececec;
+}
+
+.AddNewProduct section#main-content .content-pro-par .btnAdd {
+	width: 100%;
+}
+
+.AddNewProduct section#main-content .content-pro-par .btnAdd .adP {
+	font-family: Arial, Tahoma, sans-serif;
+	font-size: 20px;
+	width: 180px;
+	height: 45px;
+	margin: 40px auto;
+	padding: 5px;
+	cursor: pointer;
+	letter-spacing: .05em;
+	border-bottom: 1px solid #0071ff;
+	border-radius: 5px;
+	background: linear-gradient(45deg, #cf2f2f 0%, #eb5 100%);
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section#main-content .content-pro-par .btnAdd .adP a {
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.AddNewProduct section#main-content .content-pro-par .btnAdd .adP:hover {
+	background: linear-gradient(45deg, #055ed3 0%, #616161 100%);
+}
+
+.AddNewProduct section#main-content .content-pro-par .btnAdd .adP:hover a {
+	color: #fed700;
+}
+
+.AddNewProduct section#main-content .content-pro-par .pro-table {
+	float: left;
+	width: 60%;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.AddNewProduct section#main-content .content-pro-par .pro-table .p-detail {
+	font-size: 1.2em;
+	display: block;
+	float: left;
+	width: auto;
+	width: 100%;
+	margin: auto;
+	padding-bottom: 50px;
+	border-collapse: collapse;
+	color: #444;
+}
+
+.AddNewProduct section#main-content .content-pro-par .pro-table .p-detail .form-control {
+	height: 50px;
+	padding: .375rem .75rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.AddNewProduct section#main-content .content-pro-par .pro-table .p-detail .description {
+	height: 150px;
+	border-radius: 0;
+}
+
+.AddNewProduct section#main-content .content-pro-par .pro-table .p-detail .option {
+	width: 418px;
+}
+
+.AddNewProduct section#main-content .content-pro-par .cat-table {
+	float: right;
+	width: 38%;
+	margin: auto;
+	margin-top: 50px;
+	background: #fff;
+	box-shadow: 10px 10px 20px #bbb;
+}
+
+.sponsors {
+	border-top: 1px  #616161;
+	box-shadow: 0 0 20px #bbb;
+}
+

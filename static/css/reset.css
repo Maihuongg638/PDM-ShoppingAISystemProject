@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+li,
+a {
+	text-decoration: none;
+}
+
+/*
+.flex{
+    display: flex;
+    justify-content: space-between; // khong gian giuwa nhuwng phan tu con bang nhau
+    align-items: center;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+header{
+    background: #333;
+    color: white;
+    nav{
+        ul{
+            li{
+                margin-left: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+*/
+

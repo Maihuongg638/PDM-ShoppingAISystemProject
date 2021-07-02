@@ -1,0 +1,346 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.a-start {
+	align-items: flex-start;
+}
+
+.a-center {
+	align-items: center;
+}
+
+.j-between {
+	justify-content: space-between;
+}
+
+.Login {
+	width: 100%;
+	height: 900px;
+	margin: auto;
+	margin-top: 40px;
+	background: url(../img/slider_bg_31.png) no-repeat center/cover;
+}
+
+.Login .header-form {
+	font-family: Libre Baskerville;
+	font-size: 1.2em;
+	display: flex;
+	margin: auto;
+	margin-bottom: -80px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #333e48;
+	justify-content: center;
+}
+
+.Login .header-form h1 {
+	margin-top: 50px;
+}
+
+.Login .login-form .overview {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	margin: 10em auto 12em;
+}
+
+.Login .login-form .overview .submit {
+	display: flex;
+	margin-top: 2em;
+	justify-content: center;
+}
+
+.Login .login-form .overview .title {
+	font-family: 'Rubik',Sans-serif;
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+
+.Login .login-form .overview .title h4 {
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: #333e48;
+}
+
+.Login .login-form .overview p.title {
+	font-size: 16px;
+}
+
+.Login .login-form .overview .register-asking {
+	height: 450px;
+	margin-right: 50px;
+	padding: 20px 50px;
+	border: 2px solid sandybrown;
+	border-radius: 10px;
+	flex: 1 1 50%;
+	align-items: center;
+}
+
+.Login .login-form .overview .register-asking p.title {
+	padding: 30px 0;
+}
+
+.Login .login-form .overview .register-asking button {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	width: 44%;
+	padding: .7em 0;
+	cursor: pointer;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	letter-spacing: 1px;
+	color: black;
+	border: 2px solid sandybrown;
+	border-radius: 30px;
+	outline: none;
+	background: sandybrown;
+}
+
+.Login .login-form .overview .register-asking button:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #26b5eefa;
+}
+
+.Login .login-form .overview .Setpassword {
+	height: 550px;
+	margin-right: 50px;
+	padding: 20px 50px;
+	border: 2px solid sandybrown;
+	border-radius: 10px;
+	flex: 1 1 50%;
+}
+
+.Login .login-form .overview .Setpassword p {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-left: 20px;
+}
+
+.Login .login-form .overview .Setpassword input[type='password'],
+.Login .login-form .overview .Setpassword input[type='text'] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: .3em;
+	padding: 1em 3em 1em 1em;
+	letter-spacing: 1px;
+	color: #000;
+	border: none;
+	border-radius: 30px;
+	outline: none;
+	background: #e4c7ae;
+	justify-content: center;
+}
+
+.Login .login-form .overview .Setpassword input[type='password']:hover,
+.Login .login-form .overview .Setpassword input[type='text']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #ececec;
+}
+
+.Login .login-form .overview .Setpassword .reset-password {
+	display: flex;
+	margin-top: 1em;
+	justify-content: center;
+	justify-items: center;
+}
+
+.Login .login-form .overview .Setpassword .reset-password h6 {
+	display: flex;
+	padding-right: 40px;
+}
+
+.Login .login-form .overview .Setpassword .reset-password h6 a {
+	font-size: 1.5em;
+	display: inherit;
+	text-align: right;
+	letter-spacing: 1px;
+	color: salmon;
+	align-items: center;
+}
+
+.Login .login-form .overview .Setpassword .reset-password h6:hover a {
+	color: #26b5eefa;
+}
+
+.Login .login-form .overview .Setpassword .reset-password input[type='submit'] {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	width: 170px;
+	padding: .7em 0;
+	cursor: pointer;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	letter-spacing: 1px;
+	color: black;
+	border: 2px solid sandybrown;
+	border-radius: 30px;
+	outline: none;
+	background: salmon;
+}
+
+.Login .login-form .overview .Setpassword .reset-password input[type='submit']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #26b5eefa;
+}
+
+.Login .login-form .overview .Setpassword .pom-agile {
+	position: relative;
+	padding: 10px 0;
+}
+
+.Login .login-form .overview .Setpassword .pom-agile input.pass {
+	margin-top: .7em;
+}
+
+.Login .login-form .overview .Setpassword .pom-agile span {
+	font-size: 1.1em;
+	position: absolute;
+	right: 6%;
+	color: salmon;
+}
+
+.Login .login-form .overview .Setpassword .pom-agile span.icon1 {
+	top: 23%;
+}
+
+.Login .login-form .overview .Setpassword .pom-agile span.icon2 {
+	top: 34%;
+}
+
+.Login .login-form .overview .form-register {
+	padding: 20px 50px;
+	border: 2px solid sandybrown;
+	border-radius: 10px;
+	flex: 1 1 50%;
+}
+
+.Login .login-form .overview .form-register input[type='email'],
+.Login .login-form .overview .form-register input[type='password'] {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-style: italic;
+	width: 100%;
+	margin-bottom: .3em;
+	padding: 1em 3em 1em 1em;
+	letter-spacing: 1px;
+	color: #000;
+	border: none;
+	border-radius: 30px;
+	background: #e4c7ae;
+}
+
+.Login .login-form .overview .form-register input[type='email']:hover,
+.Login .login-form .overview .form-register input[type='password']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #ececec;
+}
+
+.Login .login-form .overview .form-register .reset-password {
+	margin-top: 1em;
+}
+
+.Login .login-form .overview .form-register .reset-password h6 {
+	display: flex;
+}
+
+.Login .login-form .overview .form-register .reset-password h6 a {
+	font-size: 1.5em;
+	display: inherit;
+	text-align: right;
+	letter-spacing: 1px;
+	color: salmon;
+}
+
+.Login .login-form .overview .form-register .reset-password h6:hover a {
+	color: #26b5eefa;
+}
+
+.Login .login-form .overview .form-register .reset-password input[type='submit'] {
+	font-family: 'Rubik',Sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	width: 30%;
+	padding: .7em 0;
+	cursor: pointer;
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	letter-spacing: 1px;
+	color: black;
+	border: 2px solid sandybrown;
+	border-radius: 30px;
+	outline: none;
+	background: salmon;
+}
+
+.Login .login-form .overview .form-register .reset-password input[type='submit']:hover {
+	-webkit-transition: .5s all;
+	-moz-transition: .5s all;
+	-ms-transition: .5s all;
+	-o-transition: .5s all;
+	transition: .5s all;
+	color: black;
+	background: #26b5eefa;
+}
+
+.Login .login-form .overview .form-register .pom-agile {
+	position: relative;
+	padding: 10px 0;
+}
+
+.Login .login-form .overview .form-register .pom-agile input.pass {
+	margin-top: .7em;
+}
+
+.Login .login-form .overview .form-register .pom-agile span {
+	font-size: 1.1em;
+	position: absolute;
+	right: 6%;
+	color: salmon;
+}
+
+.Login .login-form .overview .form-register .pom-agile span.icon1 {
+	top: 23%;
+}
+
+.Login .login-form .overview .form-register .pom-agile span.icon2 {
+	top: 34%;
+}
+
